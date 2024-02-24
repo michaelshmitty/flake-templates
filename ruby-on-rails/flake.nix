@@ -133,7 +133,7 @@
                 help = "Start the local Redis server";
                 command = ''
                   mkdir -p $PRJ_DATA_DIR/redis &&
-                  redis-server --dir $PRJ_DATA_DIR/redis/ --daemonize yes --pidfile $PRJ_ROOT/tmp/pids/redis.pid
+                  redis-server --dir $PRJ_DATA_DIR/redis/ --daemonize yes --pidfile $PRJ_ROOT/tmp/pids/redis.pid --port 0 --unixsocket $PRJ_ROOT/tmp/sockets/redis.sock
                 '';
               }
               {
