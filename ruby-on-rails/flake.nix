@@ -188,7 +188,7 @@
                 help = "Generate a new Rails app. Usage: `rails:new APP_NAME`";
                 command = ''
                   set +e
-                  rails new -s -n "$@" -d=postgresql --skip-docker --skip-bundle ./
+                  rails new -s -n "$@" -d=postgresql --skip-bundle ./
                 '';
               }
             ];
