@@ -1,13 +1,11 @@
-# Ruby on Rails web application with PostgreSQL flake template
+# Ruby on Rails 8 web application with SQLite flake template
 
 To get started, run the following:
 
 ```
 $ nix develop
 $ rails:new APP_NAME
-$ git add .a
-$ pg:setup
-$ pg:start
+$ git add .
 $ rails db:create
 $ rails generate scaffold Post title:string body:text
 $ rails db:migrate

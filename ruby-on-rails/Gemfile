@@ -1,43 +1,48 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '3.2.4'
+ruby "3.3.5"
 
-gem 'rails', '~> 7.1'
+gem "rails", "~> 8.0.0"
 
-gem 'bootsnap', require: false
-gem 'haml'
-gem 'haml_lint', require: false
-gem 'hotwire-rails'
-gem 'importmap-rails'
-gem 'jbuilder'
-gem 'pg'
-gem 'puma'
-gem 'redis'
-gem 'sprockets-rails'
-gem 'stimulus-rails'
-gem 'turbo-rails'
+gem "bcrypt", "~> 3.1.7"
+gem "bootsnap", require: false
+gem "hotwire-rails"
+gem "importmap-rails"
+gem "jbuilder"
+gem "kamal", require: false
+gem "propshaft"
+gem "puma", ">= 5.0"
+gem "solid_cable"
+gem "solid_cache"
+gem "solid_queue"
+gem "sqlite3", ">= 2.1"
+gem "stimulus-rails"
+gem "thruster", require: false
+gem "turbo-rails"
 
 group :development, :test do
-  gem 'debug'
-  gem 'factory_bot_rails'
-  gem 'faker'
+  gem "brakeman", require: false
+  gem "debug"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
-  gem 'letter_opener'
-  gem 'pgreset'
-  gem 'rubocop'
-  gem 'rubocop-capybara', require: false
-  gem 'rubocop-factory_bot'
-  gem 'rubocop-minitest'
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
+  gem "letter_opener"
+  gem "rubocop"
+  gem "rubocop-capybara", require: false
+  gem "rubocop-factory_bot"
+  gem "rubocop-minitest"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "ruby-lsp"
+  gem "web-console"
 end
 
 group :test do
-  gem 'capybara'
-  gem 'mocha'
-  gem 'selenium-webdriver'
-  gem 'shoulda-context'
-  gem 'shoulda-matchers'
+  gem "capybara"
+  gem "mocha"
+  gem "selenium-webdriver"
+  gem "shoulda-context"
+  gem "shoulda-matchers"
 end
